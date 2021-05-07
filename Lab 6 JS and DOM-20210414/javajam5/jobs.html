@@ -89,7 +89,7 @@
                                     )}
                                 </select >`)
 
-                                document.querySelector('#jobPosition').addEventListener('change',(e)=>{
+                                document.querySelector('#jobPosition').addEventListener('change',function(e){
                                     document.querySelector('#jobScope').textContent= person.filter((p)=>p.code===e.currentTarget.value)[0].scope;
                                 })
                             </script>

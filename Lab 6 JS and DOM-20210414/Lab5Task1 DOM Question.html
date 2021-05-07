@@ -29,7 +29,7 @@
     //Q1(i) 
     var lists = document.querySelectorAll('li');
     lists.forEach((list)=>{
-        console.log(list);
+        console.log(list.textContent);
     })
     
     //Q1(ii)
@@ -40,8 +40,8 @@
     //Q1(iii) toggle a new class
 	//The toggle() class = Toggle between adding and removing a class name from a selected element with JavaScript.
     var there = document.querySelector('#there');
-    there.addEventListener('click',()=>there.classList.toggle('blue'));
-    // there.classList.toggle('blue')
+    // there.addEventListener('click',()=>there.classList.toggle('blue'));
+    there.classList.toggle('blue')
     
 </script>
 </body>
